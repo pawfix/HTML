@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMD na Linux - Przewodnik i Multimedia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #222;
+            color: #eee;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        header {
+            background: #444;
+            color: #fff;
+            padding: 1rem 0;
+            border-bottom: 3px solid #ED1C24;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header h1 span {
+            color: #ED1C24;
+        }
+
+        section {
+            background: #444;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        h2 {
+            color: #ED1C24;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #555;
+            padding-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        a {
+            color: #ED1C24;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff4750;
+        }
+
+        video, audio, object, iframe {
+            max-width: 100%;
+            display: block;
+            margin: 1rem auto;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        object {
+             min-height: 500px;
+             background-color: #f4f4f4;
+        }
+
+        .media-description {
+            font-size: 0.9rem;
+            color: #ccc;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+            color: #aaa;
+            font-size: 0.9rem;
+            border-top: 1px solid #444;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 0 15px;
+            }
+            section {
+                padding: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1><span>AMD</span> na Linux</h1>
+            <p>Nowoczesne rozwiązania graficzne i procesorowe dla otwartego systemu</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="intro">
+            <h2>Wprowadzenie</h2>
+            <p>
+                Korzystanie ze sprzętu AMD (zarówno procesorów Ryzen, jak i kart graficznych Radeon) w systemie Linux stało się w ostatnich latach
+                bardzo popularne i wygodne. Dzięki otwartym sterownikom wbudowanym w jądro Linux (AMDGPU dla kart graficznych)
+                oraz ciągłemu wsparciu firmy AMD, użytkownicy mogą cieszyć się wysoką wydajnością i stabilnością.
+            </p>
+        </section>
+
+        <section id="local-video">
+            <h2>Pokaz możliwości</h2>
+            <p>Zobacz krótki klip prezentujący instalacje sterowników dla środowiska graficznego lub gry na Linux z kartą AMD Radeon.</p>
+            <video controls width="720">
+                <source src="media/video.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje tagu video. Proszę zaktualizować przeglądarkę.
+            </video>
+            <p class="media-description">Lokalny plik wideo demonstrujący wydajność.</p>
+        </section>
+
+        <section id="local-audio">
+            <h2>Klimatyczna muzyka <h2>
+            <p>Posłuchaj ambientowej ścieżki dźwiękowej podczas przeglądania strony.</p>
+            <audio controls>
+                <source src="media/audio.mp3" type="audio/mpeg">
+                Twoja przeglądarka nie obsługuje tagu audio.
+            </audio>
+            <p class="media-description">Lokalny plik audio dla atmosfery.</p>
+        </section>
+
+        <section id="external-site">
+            <h2>Oficjalna Strona AMD</h2>
+            <p>Odwiedź oficjalną stronę firmy AMD, aby poznać najnowsze produkty i technologie.</p>
+            <object data="https://www.amd.com" width="100%" height="600" type="text/html" style="color: #222;">
+                Niestety, strona AMD nie może być tutaj osadzona (prawdopodobnie ze względów bezpieczeństwa).
+                Możesz ją odwiedzić bezpośrednio: <a href="https://www.amd.com/" target="_blank">amd.com</a>.
+            </object>
+            <p class="media-description">Próba osadzenia oficjalnej strony AMD.com za pomocą &lt;object&gt;.</p>
+        </section>
+
+        <section id="youtube-video">
+            <h2>Testy i Recenzje z YouTube</h2>
+            <p>Zobacz recenzję lub test wydajności sprzętu AMD na Linux z serwisu YouTube.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/S4Dr8qVHDmc" title="YouTube video player - AMD Radeon RX 7900 XTX Linux Gaming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class="media-description">Film z YouTube pokazujący gry na Linux z AMD.</p>
+        </section>
+
+        <section id="google-map">
+            <h2>Lokalizacja Głównej Siedziby AMD</h2>
+            <p>Zobacz na mapie, gdzie znajduje się główna siedziba firmy AMD w Santa Clara, Kalifornia.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13268.074005569846!2d-121.93680755616832!3d37.25196010595487!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e3446697603dd%3A0xa5d63670384b11e3!2sAMD-Xilinx!5e1!3m2!1spl!2spl!4v1745852124864!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            <p class="media-description">Mapa Google wskazująca siedzibę AMD.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Paweł Fijorek</p>
+            <p>Temat: AMD na Linux.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
