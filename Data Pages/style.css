@@ -6,6 +6,9 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+a {
+    color: white;
+}
 header {
     background-color: rgb(43, 35, 35);
     font-size: larger;
@@ -37,16 +40,26 @@ section p {
 section h1 {
     margin: 15px;
 }
-
-
+object {
+    width: 75%;
+    height: 600px;
+    border-radius: 15px;
+}
+button {
+    width: 75%;
+    height: 25px;
+    border-radius: 15px;
+    font-size: medium;
+    margin: 15px;
+}
 
 .Nawigacja {
     position: fixed;
     left: 10px;
     top: 5%;
-    bottom: 5%;
+    bottom: 10%;
     width: 150px;
-    height: 90%;
+    height: 80%;
     background-color: #333;
     color: white;
     padding: 20px;
