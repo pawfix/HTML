@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formularz kontaktowy - Godziek Brothers">
+    <title>Kontakt - Godziek Brothers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 90%; 
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #111;
+            padding: 20px;
+            border: 2px solid #556b2f;
+            border-radius: 10px;
+        }
+        
+        label {
+            font-weight: bold;
+            color: #b22222;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #222;
+            color: #fff;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            border-color: #b22222;
+            outline: none;
+        }
+        
+        .form-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #b22222;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #ff4500;
+        }
+</style>
+<body>
+    <header>
+        <h1>Godziek Brothers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="sportowcy.html">O Sportowcach</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Formularz Kontaktowy</h2>
+            <form action="#" method="post">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required>
+
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Wpisz swój e-mail" required>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Wpisz swoją wiadomość" required></textarea>
+
+                <label for="topic">Wybierz temat:</label>
+                <select id="topic" name="topic">
+                    <option value="pytanie">Pytanie</option>
+                    <option value="opinia">Opinia</option>
+                    <option value="inne">Inne</option>
+                </select>
+
+                <div class="form-buttons">
+                    <button type="submit">Wyślij</button>
+                    <button type="reset">Wyczyść</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Godziek Brothers Fan Page</p>
+        <p><a href="index.html">Powrót do strony głównej</a></p>
+    </footer>
+</body>
+</html>
