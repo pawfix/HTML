@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria zdjęć Godziek Brothers">
+    <title>Galeria - Godziek Brothers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+        width: 100%;
+        height: 600px;
+    }
+    .photo img {
+        width: 75%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        border: 2px solid #556b2f; 
+        border-radius: 5px;
+        transition: transform 0.3s, border-color 0.3s;
+    }
+    .photo img:hover {
+        transform: scale(1.05);
+        border-color: #b22222; 
+    }
+    .photo a:hover .arrow {
+        background-color: #b22222;
+        color: #fff;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    .photo a {
+        text-decoration: none;
+        color: inherit;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .gallery figure {
+        text-align: center;
+        max-width: 150px;
+    }
+    
+    .gallery img {
+        width: auto;
+        height=160px;
+        object-fit: cover;
+        border: 2px solid #556b2f; 
+        border-radius: 5px;
+        transition: transform 0.3s, border-color 0.3s;
+    }
+    
+    .gallery img:hover {
+        transform: scale(1.1);
+        border-color: #b22222; 
+    }
+    <div>
+        .gallery img[src="Galeria/Male1.jpg"]:hover {
+            content: url('Galeria/Zdiecie1.jpg');
+        }
+
+        .gallery img[src="Galeria/Male2.jpg"]:hover {
+            content: url('Galeria/Zdiecie2.jpg');
+        }
+
+        .gallery img[src="Galeria/Male3.jpg"]:hover {
+            content: url('Galeria/Zdiecie3.jpg');
+        }
+
+        .gallery img[src="Galeria/Male4.jpg"]:hover {
+        content: url('Galeria/Zdiecie4.jpg');
+        }
+    </div>
+    
+    .gallery figcaption {
+        margin-top: 5px;
+        font-size: 0.9em;
+        color: #fff;
+    }
+
+    .arrow {
+        width: 10%;
+        min-width: 40px;
+        text-align: center;
+        font-size: 2.5em;
+        color: #b22222;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        height: 500px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Godziek Brothers</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="sportowcy.html">O Sportowcach</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h3>Galeria</h3>
+        </section>
+       <section class="photo">
+            <a href="Galeria2.html"><button class="arrow arrow-left">&#8592;</button></a>
+            <a href="Galeria/Zdiecie3.jpg" target="_blank">
+                <img src="Galeria/Zdiecie3.jpg" alt="Zdiecie3">
+            </a>
+            <a href="Galeria4.html"><button class="arrow arrow-right">&#8594;</button></a>
+        </section>
+        <div class="gallery">
+            <a href="Galeria3.html"><img src="Galeria/Male3.jpg" alt="Zdiecie1" height="160px"></a>
+            <a href="Galeria4.html"><img src="Galeria/Male4.jpg" alt="Zdiecie2" height="160px"></a>
+            <a href="Galeria.html"><img src="Galeria/Male1.jpg" alt="Zdiecie3" height="160px"></a>
+            <a href="Galeria1.html"><img src="Galeria/Male2.jpg" alt="Zdiecie4" height="160px"></a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Godziek Brothers Fan Page</p>
+        <p><a href="index.html">Powrót do strony głównej</a></p>
+    </footer>
+</body>
+</html>

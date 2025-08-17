@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Myszka - Mouse</title>
+    <style>
+            body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .component-info {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .back-link:hover {
+        background-color: #45a049;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e6e6e6;
+    }
+        .component-info ul {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px 20px 20px 40px;
+        margin: 20px 0;
+    }
+    .component-info ul {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px 20px 20px 40px;
+        margin: 20px 0;
+    }
+    .component-info ul {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px 20px 20px 40px;
+        margin: 20px 0;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <header style="text-align: center; background-color: green; padding: 25px; border-radius: 25px;">
+            <h1>Myszka - Mouse</h1>
+        </header>
+    </div>
+    <div  class="component-info" style="2px solid black; border-radius: 10px; padding: 20px 20px 20px 40px; margin: 20px 0;"">
+        <p style="text-align: center;"><a href="#tabela">Tabela</a>|=|<a href="#Fakty">Ciekawostki</a>|=|<a href="#Slownik">Słownik</a></p>
+    </div>
+    <div class="component-info">
+        <p>A small, handheld device that detects and interprets movement and button presses.</p>
+        <p>Małe, ręczne urządzenie wykrywające i interpretujące ruchy i naciśnięcia przycisków.</p>
+        <a href="Media/Myszka.png" target="_blank"><img src="Media/myszka.png" alt="Myszka Logitech G502" width=250px></a>
+        <div>
+            <table id="tabela">
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Rodzaj</th>
+                    <th>Cena</th>
+                    <th>Sklep</th>
+                </tr>
+                <tr>
+                    <td>Logitech G502</td>
+                    <td>Gaming Mouse</td>
+                    <td>399 zł</td>
+                    <td><a href="https://www.logitechg.com/pl-pl/products/gaming-mice/g502-hero-gaming-mouse.910-005470.html" target="_blank">Link</a></td>
+                </tr>
+                <tr>
+                    <th colspan="4" style="text-align: center;">Konkuręcja</th>
+                </tr>
+                <tr>
+                    <td>Logitech G502 Hero</td>
+                    <td>Gaming Mouse</td>
+                    <td>499 zł</td>
+                    <td><a href="https://www.logitechg.com/pl-pl/products/gaming-mice/g502-hero-gaming-mouse.910-005470.html" target="_blank">Link</a></td>
+                </tr>
+                <tr>
+                    <td>Logitech G502 Pro</td>
+                    <td>Gaming Mouse</td>
+                    <td>599 zł</td>
+                    <td><a href="https://www.logitechg.com/en-hk/products/gaming-mice/g502-proteus-spectrum-rgb-gaming-mouse.html" target="_blank">Link</a></td
+                </tr>
+            </table>
+        </div>
+        <div id="Fakty">
+            <div class="component-info">
+                <h2>Interesting Facts About Computer Mice</h2>
+                <ul>
+                    <li>The first computer mouse was invented by Douglas Engelbart in 1964.</li>
+                    <li>Early mice used a ball to track movement, while modern ones use optical sensors.</li>
+                    <li>Wireless mice can use radio frequency (RF) or Bluetooth technology.</li>
+                    <li>Gaming mice often have higher DPI (dots per inch) for more precise tracking.</li>
+                    <li>Some mice have additional programmable buttons for custom functions.</li>
+                    <li>Ergonomic mice are designed to reduce strain and prevent repetitive stress injuries.</li>
+                    <li>The term "mouse" was coined because early models had a cord resembling a mouse's tail.</li>
+                </ul>
+            
+                <h2>Ciekawostki o Myszkach Komputerowych</h2>
+                <ul>
+                    <li>Pierwsza mysz komputerowa została wynaleziona przez Douglasa Engelbarta w 1964 roku.</li>
+                    <li>Wczesne myszy używały kulki do śledzenia ruchu, podczas gdy nowoczesne używają czujników optycznych.</li>
+                    <li>Myszy bezprzewodowe mogą korzystać z technologii radiowej (RF) lub Bluetooth.</li>
+                    <li>Myszy do gier często mają wyższe DPI (punkty na cal) dla bardziej precyzyjnego śledzenia.</li>
+                    <li>Niektóre myszy mają dodatkowe programowalne przyciski do niestandardowych funkcji.</li>
+                    <li>Myszy ergonomiczne są zaprojektowane, aby zmniejszyć napięcie i zapobiec urazom wynikającym z powtarzających się czynności.</li>
+                    <li>Termin "mysz" powstał, ponieważ wczesne modele miały przewód przypominający ogon myszy.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <p id="Slownik">Więcej informacji: <a href="https://dictionary.cambridge.org/dictionary/english/mouse" target="_blank">Strona cambridge</a></p>
+        <p><a href="index.html#Slowo9">Wróć</a></p>
+    </div>
+</body>
+</html>

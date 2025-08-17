@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesor - Processor</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .component-info {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .back-link:hover {
+        background-color: #45a049;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e6e6e6;
+    }
+    .component-info ul {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px 20px 20px 40px;
+        margin: 20px 0;
+    }
+</style>
+<body>
+    <div>
+        <header style="text-align: center; background-color: green;; padding: 25px; border-radius: 25px; ">
+            <h1>Procesor - Processor</h1>
+        </header>
+    </div>
+    <div  class="component-info" style="2px solid black; border-radius: 10px; padding: 20px 20px 20px 40px; margin: 20px 0;"">
+        <p style="text-align: center;"><a href="#tabela">Tabela</a>|=|<a href="#Fakty">Ciekawostki</a>|=|<a href="#Slownik">Słownik</a></p>
+    </div>
+    <div class="component-info">
+        <p>A processor (CPU) is the logic circuitry that responds to and processes the basic instructions that drive a computer.</p>
+        <p>Procesor (CPU) to obwód logiczny, który reaguje i przetwarza podstawowe instrukcje sterujące komputerem.</p>
+        <a href="Media/Procesor.png" target="_blank"><img src="Media/Procesor.png" alt="Procesor AMD Ryzen 7950 X3D"></a>
+        <table id="tabela">
+            <tr>
+                <th>Nazwa</th>
+                <th>Clock rate</th>
+                <th>Pobór mocy</th>
+                <th>Rdzenie</th>
+                <th>Cena</th>
+                <th>Sklep</th>
+            </tr>
+            <tr>
+                <td>Procesor AMD Ryzen 7950 X3D</td>
+                <td>4.2 GHz</td>
+                <td>120W</td>
+                <td>16 rdzeni</td>
+                <td>2199 PLN</td>
+                <td><a href="https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html" target="_blank">AMD</a></td>
+            </tr>
+            <tr>
+                <th colspan="6" style="text-align: center;">Konkuręcja</th>
+            </tr>
+            <tr>
+                <td>Intel Core i9-9900KF</td>
+                <td>3.6 GHz</td>
+                <td>120W</td>
+                <td>12 rdzeni</td>
+                <td>1999 PLN</td>
+                <td><a href="https://www.intel.com/content/www/us/en/processors/core/i9-9900kf.html" target="_blank">Intel</a></td>
+            </tr>
+            <tr>
+                <td>Intel Core i9-9900K</td>
+                <td>3.6 GHz</td>
+                <td>120W</td>
+                <td>12 rdzeni</td>
+                <td>1999 PLN</td>
+                <td><a href="https://www.intel.com/content/www/us/en/products/sku/186605/intel-core-i99900k-processor-16m-cache-up-to-5-00-ghz/specifications.html" target="_blank">Intel</a></td>
+            </tr>
+        </table>
+        <div id="Fakty">
+            <div class="component-info">
+                <h2>Interesting Facts About Processors</h2>
+                <ul>
+                    <li>The first microprocessor was the Intel 4004, released in 1971.</li>
+                    <li>Modern processors can have billions of transistors on a single chip.</li>
+                    <li>CPU clock speeds are measured in Hertz (Hz), with modern CPUs reaching several GHz.</li>
+                    <li>Many processors use multiple cores to perform parallel processing.</li>
+                    <li>Some CPUs have built-in graphics processing capabilities.</li>
+                    <li>Processors use cache memory to speed up data access.</li>
+                    <li>The heat generated by a CPU can be enough to fry an egg!</li>
+                </ul>
+            
+                <h2>Ciekawostki o Procesorach</h2>
+                <ul>
+                    <li>Pierwszy mikroprocesor to Intel 4004, wydany w 1971 roku.</li>
+                    <li>Nowoczesne procesory mogą mieć miliardy tranzystorów na jednym chipie.</li>
+                    <li>Prędkości zegara CPU mierzone są w Hertzach (Hz), przy czym nowoczesne CPU osiągają kilka GHz.</li>
+                    <li>Wiele procesorów wykorzystuje wiele rdzeni do przetwarzania równoległego.</li>
+                    <li>Niektóre CPU mają wbudowane możliwości przetwarzania grafiki.</li>
+                    <li>Procesory używają pamięci podręcznej do przyspieszenia dostępu do danych.</li>
+                    <li>Ciepło generowane przez CPU może być wystarczające do usmażenia jajka!</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <p id="Slownik">More info: <a href="https://dictionary.cambridge.org/dictionary/english/processor" target="_blank">Strona cambridge</a></p>
+        <p><a href="index.html#Slowo2">Wróć</a></p>
+    </div>
+</body>
+</html>
