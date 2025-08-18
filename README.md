@@ -9,15 +9,13 @@
 
 1. [O repozytorium](#o-repozytorium)
 2. [Jak uruchomić](#jak-uruchomić)
-3. [Struktura katalogów](#struktura-katalogów)
-4. [Stack i narzędzia](#stack-i-narzędzia)
-5. [Roadmapa nauki](#roadmapa-nauki)
-6. [Dziennik postępów](#dziennik-postępów)
-7. [Mini–projekty](#mini–projekty)
-8. [Zasady jakości](#zasady-jakości)
-9. [Zadania / To‑Do](#zadania--to-do)
-10. [Jak kontrybuować](#jak-kontrybować)
-11. [Licencja](#licencja)
+3. [Stack i narzędzia](#stack-i-narzędzia)
+4. [Roadmapa nauki](#roadmapa-nauki)
+5. [Dziennik postępów](#dziennik-postępów)
+6. [Mini–projekty](#mini–projekty)
+7. [Zasady jakości](#zasady-jakości)
+8. [Jak kontrybuować](#jak-kontrybować)
+9. [Licencja](#licencja)
 
 ---
 
@@ -44,18 +42,6 @@ Najprościej — otwórz plik `index.html` wybranego projektu w przeglądarce.
 - **Style & UI:** BEM, Utility‑First (opcjonalnie), animacje CSS
 - **Narzędzia dev:** VS Code, Live Server
 - **Kontrola wersji:** Git + GitHub (konwencja commitów: *feat/fix/docs/refactor/chore*)
-
-**Formatowanie kodu:**
-
-```json
-{
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
-  "files.eol": "\n",
-  "prettier.singleQuote": true,
-  "prettier.semi": false
-}
-```
 
 ---
 
