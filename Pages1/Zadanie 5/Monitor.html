@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor - Monitor</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .component-info {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .back-link:hover {
+        background-color: #45a049;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e6e6e6;
+    }
+    .component-info ul {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px 20px 20px 40px;
+        margin: 20px 0;
+    }
+</style>
+<body>
+    <div>
+        <header style="background-color: green; padding: 25px; align-self: center; border-radius: 25px;">
+            <h1>Monitor - Monitor</h1>
+        </header>
+    </div>
+    <div  class="component-info" style="2px solid black; border-radius: 10px; padding: 20px 20px 20px 40px; margin: 20px 0;"">
+        <p style="text-align: center;"><a href="#tabela">Tabela</a>|=|<a href="#Fakty">Ciekawostki</a>|=|<a href="#Slownik">Słownik</a></p>
+    </div>
+    <div class="component-info">
+        <p>A monitor is a device that displays information in graphic or text form.</p>
+        <p>Monitor to urządzenie, które wyświetla informacje w formie graficznej lub tekstowej.</p>
+        <a href="https://pl.msi.com/Monitor/G24C4-E2" target="_blank"><img src="Media/Monitor.png" alt="Monitor MSI G24C4 E2 Curved Gaming"></a>
+        <div>
+            <table id="tabela">
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Rozdzielczość</th>
+                    <th>Typ</th>
+                    <th>Kolor</th>
+                    <th>Cena</th>
+                    <th>Sklep</th>
+                </tr>
+                <tr>
+                    <td>Monitor MSI G24C4 E2 Curved Gaming</td>
+                    <td>2560x1440</td>
+                    <td>Curved</td>
+                    <td>Multikolorowe</td>
+                    <td>529,99 PLN</td>
+                    <td><a href="https://pl.msi.com/Monitor/G24C4-E2" target="_blank">MSI</a></td>
+                </tr>
+                <tr>
+                    <th colspan="6" style="text-align: center;">Konkuręcja</th>
+                </tr>
+                <tr>
+                    <td>MSI G27CQ4 E2</td>
+                    <td>2560x1440</td>
+                    <td>Curved</td>
+                    <td>Multikolorowe</td>
+                    <td>749,99 PLN</td>
+                    <td><a href="https://pl.msi.com/Monitor/G27CQ4-E2" target="_blank">MSI</a></td>
+                </tr>
+                <tr>
+                    <td>LG UltraGear 27GS60QC-B</td>
+                    <td>2560x1440</td>
+                    <td>Curved</td>
+                    <td>Multikolorowe</td>
+                    <td>649,99 PLN</td>
+                    <td><a href="https://www.lg.com/pl/monitors/lg-27GS60QC-B" target="_blank">LG</a></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Fakty">
+            <div class="component-info">
+                <h2>Interesting Facts About Monitors</h2>
+                <ul>
+                    <li>The first computer monitors were actually modified oscilloscopes.</li>
+                    <li>CRT monitors were dominant until the early 2000s when LCD took over.</li>
+                    <li>OLED monitors offer perfect black levels as each pixel emits its own light.</li>
+                    <li>Some gaming monitors can have refresh rates of up to 360Hz.</li>
+                    <li>HDR (High Dynamic Range) technology can display a wider range of colors and brightness.</li>
+                    <li>Ultrawide monitors with aspect ratios like 21:9 are becoming increasingly popular.</li>
+                    <li>Some monitors have built-in USB hubs and speakers for added functionality.</li>
+                </ul>
+            
+                <h2>Ciekawostki o Monitorach</h2>
+                <ul>
+                    <li>Pierwsze monitory komputerowe były w rzeczywistości zmodyfikowanymi oscyloskopami.</li>
+                    <li>Monitory CRT dominowały do początku lat 2000, kiedy to LCD przejęło rynek.</li>
+                    <li>Monitory OLED oferują idealne poziomy czerni, ponieważ każdy piksel emituje własne światło.</li>
+                    <li>Niektóre monitory do gier mogą mieć częstotliwość odświeżania do 360Hz.</li>
+                    <li>Technologia HDR (High Dynamic Range) może wyświetlać szerszy zakres kolorów i jasności.</li>
+                    <li>Monitory ultraszerokie o proporcjach takich jak 21:9 stają się coraz bardziej popularne.</li>
+                    <li>Niektóre monitory mają wbudowane huby USB i głośniki dla dodatkowej funkcjonalności.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <p id="Slownik">More info: <a href="https://dictionary.cambridge.org/dictionary/english/monitor" target="_blank">Strona cambridge</a></p>
+        <p><a href="index.html#Slowo6">Wróć</a></p>
+    </div>
+</body>
+</html>

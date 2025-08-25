@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz o Otsochodzi</title>
+    <style>
+            div{
+            background-color: aquamarine;
+            border-radius: 25px;
+            padding: 25px;
+            font-size: large;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #169928c4;
+            margin: 0;
+            padding: 20px;
+        }
+        .div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: aquamarine;
+            border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+            font-size: x-large;
+        }
+        .div:hover {
+            transform: scale(1.03);
+        }
+        .div img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .div a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #34495e;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        input[type="radio"] + label, input[type="checkbox"] + label {
+            display: inline-block;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        input[type="range"] {
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            transition: opacity .2s;
+        }
+        input[type="range"]:hover {
+            opacity: 1;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #3498db;
+            cursor: pointer;
+        }
+        select[multiple] {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz o Otsochodzi</h1>
+
+    <div1>
+        <form>
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" required>
+
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" required>
+
+            <label for="opinia">Twoja opinia o Otsochodzi:</label>
+            <textarea id="opinia" name="opinia" rows="4"></textarea>
+
+            <label>Ulubiony album Otsochodzi:</label>
+            <input type="radio" id="nowy_kolor" name="album" value="Nowy kolor">
+            <label for="nowy_kolor">Nowy kolor</label>
+            <input type="radio" id="milosc" name="album" value="Miłość">
+            <label for="milosc">Miłość</label>
+            <input type="radio" id="zakladka" name="album" value="TThe Grind/TThe Grind(deluxe)">
+            <label for="zakladka">TThe Grind/TThe Grind(deluxe)</label>
+
+            <label>Płeć:</label>
+            <input type="radio" id="mezczyzna" name="plec" value="Mężczyzna">
+            <label for="mezczyzna">Mężczyzna</label>
+            <input type="radio" id="kobieta" name="plec" value="Kobieta">
+            <label for="kobieta">Kobieta</label>
+
+            <label>Ulubione utwory (wybierz kilka):</label>
+            <ul>
+                <li><input type="checkbox" id="Rap" name="utwory" value="Rap">
+                    <label for="Rap">Rap</label></li>
+                <li><input type="checkbox" id="Slam" name="utwory" value="Slam">
+                    <label for="Slam">Slam</label></li>
+                <li><input type="checkbox" id="Panorama" name="utwory" value="Panorama">
+                    <label for="Panorama">Panorama</label></li>
+                <li><input type="checkbox" id="Nie/Nie" name="utwory" value="Nie/Nie">
+                    <label for="Nie/Nie">Nie/Nie</label></li>
+                <li><input type="checkbox" id="Poj*bane Stany" name="utwory" value="Poj*bane Stany">
+                    <label for="Poj*bane Stany">Poj*bane Stany</label></li>
+                <li><input type="checkbox" id="SMS" name="utwory" value="SMS">
+                    <label for="SMS">SMS</label></li>
+                <li><input type="checkbox" id="@champangepapi" name="utwory" value="@champangepapi">
+                    <label for="@champangepapi">@champangepapi</label></li>
+                <li><input type="checkbox" id="Lifestyle" name="utwory" value="Lifestyle">
+                    <label for="Lifestyle">Lifestyle</label></li>
+                <li><input type="checkbox" id="Przypadkiem" name="utwory" value="Przypadkiem">
+                    <label for="Przypadkiem">Przypadkiem</label></li>
+                <li><input type="checkbox" id="MVP" name="utwory" value="MVP">
+                    <label for="MVP">MVP</label></li>
+                <li><input type="checkbox" id="WMTB" name="utwory" value="WMTB">
+                    <label for="WMTB">WMTB</label></li>
+            </ul>
+            <label>Gatunki muzyczne, które kojarzysz z Otsochodzi:</label>
+            <input type="checkbox" id="hiphop" name="gatunki" value="Hip-hop">
+            <label for="hiphop">Hip-hop</label>
+            <input type="checkbox" id="trap" name="gatunki" value="Trap">
+            <label for="trap">Trap</label>
+            <input type="checkbox" id="rnb" name="gatunki" value="R&B">
+            <label for="rnb">R&B</label>
+
+            <label for="ocena">Oceń twórczość Otsochodzi (1-10):</label>
+            <input type="range" id="ocena" name="ocena" min="1" max="10">
+
+            <label for="miasto">Wybierz miasto, w którym chciałbyś zobaczyć koncert Otsochodzi:</label>
+            <select id="miasto" name="miasto">
+                <option value="">Wybierz miasto</option>
+                <option value="warszawa">Warszawa</option>
+                <option value="krakow">Kraków</option>
+                <option value="wroclaw">Wrocław</option>
+                <option value="poznan">Poznań</option>
+            </select>
+
+            <label for="ulubione_collaby">Wybierz swoje ulubione Collaby:</label>
+            <select id="ulubione_collaby" name="ulubione_collaby" multiple>
+                <option value="Oki">Oki</option>
+                <option value="Young Igi">Young Igi</option>
+                <option value="@atutowy">@atutowy</option>
+                <option value="lohleq">lohleq</option>
+                <option value="Kusha">Kusha</option>
+            </select>
+
+            <label for="haslo">Wpisz tajne haslo:</label>
+            <input type="password" id="haslo" name="haslo" required>    
+
+            
+            <label for="szukaj">Wyszukaj ulubioną piosenkę:</label>
+            <input type="search" id="szukaj" name="szukaj" placeholder="Wpisz tytuł piosenki">
+
+            <label for="czas_koncertu">Preferowana godzina koncertu:</label>
+            <input type="time" id="czas_koncertu" name="czas_koncertu">
+
+            <button type="submit">Wyślij</button>
+            <button type="reset">Wyczyść</button>
+            <button type="button" onclick="alert('Dziękujemy za udział w quizie!')">Pokaż komunikat</button>
+        </form>
+    </div1>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Słownik IT</title>
+</head>
+<style>
+    div{
+        background-color: aquamarine;
+        border-radius: 25px;
+        padding: 25px;
+        font-size: large;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0c4;
+        margin: 0;
+        padding: 20px;
+    }
+    .div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        padding: 15px;
+        transition: transform 0.3s ease;
+        font-size: x-large;
+    }
+    .div:hover {
+        transform: scale(1.03);
+    }
+    .div img {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+    }
+    .div a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+    }
+    #listy {
+        background-color: #4CAF50;
+        color: aquamarine;
+        border-radius: 10px;
+        padding: 20px;
+        font-size: large;
+    }
+    #listy a {
+        color: aquamarine;
+    }
+</style>
+<script>
+    function adjustMapAreas() {
+        const img1 = document.querySelector('img[usemap="#Podglad"]');
+        const originalWidth1 = 1024; // Original width of Podglad1.png
+
+        const scale1 = img1.clientWidth / originalWidth1;
+
+        const areas1 = document.querySelectorAll('map[name="Podglad"] area');
+
+        areas1.forEach(area => {
+            const coords = area.dataset.coords.split(',').map(coord => Math.round(coord * scale1));
+            area.coords = coords.join(',');
+        });
+    }
+
+    window.addEventListener('load', adjustMapAreas);
+    window.addEventListener('resize', adjustMapAreas);
+</script>
+<body>
+    <div>
+        <header style="text-align: center; background-color: #4CAF50; color: white; padding: 10px; border-radius: 25px; display: flex; align-items: center;">
+                        <div1 style="flex: 0 0 25%; padding: 25px; float: left;">
+                <img src="Media/Logo.png" alt="Logo" style="width: 250px; height: auto;">
+            </div1>
+            <div1 style="align-self: center;">
+                <h1>Słownik Informatyczny<br>Polsko - Angielski</h1>
+            </div1>
+
+        </header>
+    </div>
+    <div style="border-radius: 25px; padding: 20px;" id="listy">
+        <h2>Spis streści:</h2>
+            <ul>
+                <li><a href="#Slowo1">Karta graficzna</a></li>
+                <li><a href="#Slowo2">Procesor</a></li>
+                <li><a href="#Slowo3">Zasilacz</a></li>
+                <li><a href="#Slowo4">Obudowa</a></li>
+                <li><a href="#Slowo5">Plyta główna</a></li>
+                <li><a href="#Slowo6">Monitor</a></li>
+                <li><a href="#Slowo7">Dysk twardy</a></li>
+                <li><a href="#Slowo8">Klawiatura</a></li>
+                <li><a href="#Slowo9">Mysz</a></li>
+                <li><a href="#Slowo10">Słuchawki</a></li>
+                <li id="Zrodla"><a href="Zrodla.html">Źródła</a></li>
+            </ul>
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; background-color: aquamarine; border-radius: 25px; padding: 25px;">
+        
+        <img src="Media/Podglad1.png" alt="Interaktywny podgląd" usemap="#Podglad" style="max-width:400px; height: auto; border-radius: 25px;">
+        
+        <map name="Podglad">
+            <area shape="rect" data-coords="70,180,375,300" href="Karta graficzna.html" alt="Karta graficzna">
+            <area shape="rect" data-coords="395,160,625,390" href="Procesor.html" alt="Procesor">
+            <area shape="rect" data-coords="705,185,950,355" href="Zasilacz.html" alt="Zasilacz">
+            <area shape="rect" data-coords="120,540,255,765" href="Obudowa.html" alt="Obudowa">
+            <area shape="rect" data-coords="400,540,625,765" href="Płyta glowna.html" alt="Płyta główna">
+            <area shape="rect" data-coords="740,540,920,765" href="Dysk twardy.html" alt="HDD">
+        </map>
+    </div>
+    <br>
+        <div class="div">
+            <p id="Slowo1"><a href="Karta graficzna.html">Karta graficzna - Graphics card</a></p>
+                <a href="Karta graficzna.html"><img src="Media/karta graficzna.png" alt="Karta graficzna Radeon 5600 XT"></a>
+                <br>
+        </div>
+        <div class="div">
+            <p id="Slowo2"><a href="Procesor.html">Procesor - Processor</a></p>
+                <a href="Procesor.html"><img src="Media/Procesor.png" alt="Procesor AMD Ryzen 7950 X3D" width=250px></a>
+                <br>
+        </div>
+        <div class="div">
+            <p id="Slowo3"><a href="Zasilacz.html">Zasilacz - power supply</a></p>
+                <a href="Zasilacz.html"><img src="Media/Zasilacz.png" alt="Zasilacz Modecom Vulcano 750W 80 Plus GOLD" width=250px><a/
+                <br>
+        </div>
+        <div class="div">
+            <p id="Slowo4"><a href="Obudowa.html">Obudowa - PC case<a></p>
+                <a href="Obudowa.html"><img src="Media/Obudowa.png" alt="Obudowa Phantex XT View" width="250px"></a>
+                <br>
+        </div>
+        <div class="div">             
+            <p id="Slowo5"><a href="Płyta glowna.html">Płyta główna - MotherBoard(MoBo)<a></p>
+                <a href="Płyta glowna.html"><img src="Media/Plyta glowna.png" alt="Strona MSI" width="250px"></a>
+                <br>
+        </div>
+        <div class="div">
+            <p id="Slowo6"><a href="Monitor.html">Monitor - Monitor<a></p>
+                <a href="Monitor.html"><img src="Media/Monitor.png" alt="Strona MSI" width="250px"></a>
+        </div>
+        <div class="div">
+            <p id="Slowo7"><a href="Dysk twardy.html">Dysk twardy - Hard drive</a></p>
+                <a href="Dysk twardy.html"><img src="Media/Dysk twardy.png" alt="Dysk twardy Seagate Barracuda 1TB" width="250px"></a>
+                <br>
+        </div>
+        <div class="div">
+            <p id="Slowo8"><a href="Klawiatura.html">Klawiatura - Keyboard</a></p>
+                <a href="Klawiatura.html"><img src="Media/Klawiatura.png" alt="Klawiatura Logitech G915" width="250px"></a>
+                <br>
+        </div>
+        <div class="div">
+            <p id="Slowo9"><a href="Myszka.html">Myszka - Mouse</a></p>
+                <a href="Myszka.html"><img src="Media/Myszka.png" alt="Myszka Logitech G502" width="250px"></a>
+                <br>
+        </div>
+        <div class="div">
+            <p id="Slowo10"><a href="Słuchawki.html">Słuchawki - Headset</a></p>
+                <a href="Słuchawki.html"><img src="Media/Słuchawki.png" alt="Słuchawki Audio-Technica ATH-M50x" width="250px"></a>
+                <br>
+        </div>
+    <div>
+        <footer style="font-size: medium; text-align: center; background-color: #4CAF50; color: white; padding: 10px; border-radius: 25px;">
+            <h1>Zrobione przez:<br>Uczen</h1>
+        </footer>
+</body>
+</html>

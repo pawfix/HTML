@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podroz z HTML</title>
+    <link id="theme" rel="stylesheet" href="Data Pages/styledark.css">
+    <style>
+        body {
+        transition: background 0.4s, color 0.4s;
+    }
+        .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moja podroz z HTML w szkole</h1>
+    <div>
+        <p>Strona zostala juz odwiedzona  <span id="counter"></span> razy.</p>
+        <script>
+            let visits = localStorage.getItem('visitCount');
+                if (!visits) {
+                visits = 0;
+            }
+
+            visits++;
+
+            localStorage.setItem('visitCount', visits);
+
+            document.getElementById('counter').textContent = visits;
+        </script>
+    </div>
+    </header>
+    <div class="Nawigacja"> <!--Pasek boczny-->
+        <div>
+            <p>Tryb<br>Ciemny/Jasny</p>
+            <label class="switch">
+                <input type="checkbox" onchange="toggleStyle()" id="themeSwitch">
+                <span class="slider"></span>
+            </label>
+            
+            <script>
+                function toggleStyle() {
+                    const themeLink = document.getElementById('theme');
+                    const checkbox = document.getElementById('themeSwitch');
+                  
+                    if (checkbox.checked) {
+                        themeLink.setAttribute('href', 'Data Pages/stylelight.css');
+                    } else {
+                        themeLink.setAttribute('href', 'Data Pages/styledark.css');
+                    }
+                }
+              </script>
+        </div>
+        <h2>Nawigacja</h2>
+        <ul>
+          <li><a href="#Historia">Historia zadan</a></li>
+          <li><a href="#Zadanie1">Zadanie 1</a></li>
+          <li><a href="#Zadanie2">Zadanie 2</a></li>
+          <li><a href="#Zadanie3">Zadanie 3</a></li>
+          <li><a href="#Zadanie4">Zadanie 4</a></li>
+          <li><a href="#Zadanie5">Zadanie 5</a></li>
+          <li><a href="#Zadanie6">Zadanie 6</a></li>
+          <li><a href="#Zadanie7">Zadanie 7</a></li>
+          <li><a href="#Zadanie8">Zadanie 8</a></li>
+          <li><a href="#Zadanie9">Zadanie 9</a></li>
+        </ul>
+      </div>
+    <main>
+        <section id="Historia">
+            <h1>Historia zadan</h1>
+            <p>Jako ze chodze do szkoly informatycznej, to mam zajecia z Web Development. Robienie stron bardzo mi sie spodobalo wiec postanowilem sie dalej rozwijac w wlasnym zakresie.</p>
+            <p>Mialem juz 9 zadan z HTML i 1 z CSS, i wszystkie te zadania beda w tym REPO.</p>
+        </section>
+        <section id="Zadanie1">
+            <h1>Zadanie 1</h1>
+            <h3>Wstep do HTML</h2>
+            <p>Zadanie bylo proste. Polegalo ono na zrobieniu zaproszenia na dni otwarte w mojej szkole.</p>
+            <div>
+                <object data="Zadanie 1/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 1/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie2">
+            <h1>Zadanie 2</h1>
+            <h3>Znaki specjalne</h3>
+            <p>Tym razem zadanie polegalo na pokazaniu znakow specjalnych, metadanych itp.</p>
+            <div>
+                <object data="Zadanie 2/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 2/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie3">
+            <h1>Zadanie 3</h1>
+            <h3>Linki wewnetrzne</h3>
+            <p>Te zadanie polegalo na ustawieniu nawigacji po stronie za pomoca linkow wewnetrznych i otwieraniu zdiec na pelna strone</p>
+            <div>
+                <object data="Zadanie 3/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 3/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie4">
+            <h1>Zadanie 4</h1>
+            <h3>Pliki lokalne i podstrony</h3>
+            <p>Zadanie 4 polegalo na uzyciu linkow do otwierania podstron, nawigacji po stronie i pobierania lokalnych plikow.</p>
+            <div>
+                <object data="Zadanie 4/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 4/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie5">
+            <h1>Zadanie 5</h1>
+            <h3>Poprawne uzycie podstron i grafik</h3>
+            <p>Zadanie 5 mialo na celu zrobienie slownika polsko-angielskiego z grafikami, tabelami, linkami i definicjami</p>
+            <div>
+                <object data="Zadanie 5/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 5/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie6">
+            <h1>Zadanie 6</h1>
+            <h3>Formularz</h3>
+            <p>Te Zadanie polegalo na zrobieniu Quizu o twoim ulubionym artyscie, z roznymi formami wprowadzania danych</p>
+            <div>
+                <object data="Zadanie 6/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 6/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie7">
+            <h1>Zadanie 7</h1>
+            <h3>Interaktywna galeria</h3>
+            <p>Zadanie te polegalo na zrobieniu interaktywnej galerii z kotami, skladajacej sie z kilku podstron pomiedzy ktorymi skaczesz za pomoca guzikow</p>
+            <div>
+                <object data="Zadanie 7/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 7/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie8">
+            <h1>Zadanie 8</h1>
+            <h3>Multimedia</h3>
+            <p>Te zadanie polegalo na pokazaniu swojej umiejetnopsci uzywania multimedji typu filmy i pliki audio</p>
+            <div>
+                <object data="Zadanie 8 - Multimedia/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 8 - Multimedia/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+        <section id="Zadanie9">
+            <h1>Zadanie 9</h1>
+            <h3>Ostatni test</h3>
+            <p>W tym zadaniu musialem zrobic strone uzywajac wszystkich wczesniej poznanych funkcji</p>
+            <div>
+                <object data="Zadanie 9 - Sportowiec/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
+                <a href="Zadanie 9 - Sportowiec/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Zrobione przez <a href="https://github.com/pawfix/">pawfix</a></p>
+        <p>2025-20XX</p>
+    </footer>
+    <!-- Przycisk scroll-to-top -->
+<button id="DoGory" style="
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:#888888;
+color:white;
+font-size:25px;
+line-height:20px;
+text-align:center;
+cursor:pointer;
+padding:0;
+">↑</button>
+
+<script>
+const DoGory = document.getElementById('DoGory');
+
+// Pokaż / ukryj przycisk przy przewijaniu
+window.onscroll = () => {
+DoGory.style.display = window.scrollY > 100 ? 'block' : 'none';
+};
+
+// Przewiń do góry po kliknięciu
+DoGory.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+</script>
+</body>
+</html>

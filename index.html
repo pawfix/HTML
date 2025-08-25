@@ -3,233 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Podroz z HTML</title>
-    <link id="theme" rel="stylesheet" href="Data Pages/styledark.css">
-    <style>
-        body {
-        transition: background 0.4s, color 0.4s;
-    }
-        .switch {
-      position: relative;
-      display: inline-block;
-      width: 50px;
-      height: 24px;
-    }
-
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      transition: .4s;
-      border-radius: 24px;
-    }
-
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 18px;
-      width: 18px;
-      left: 3px;
-      bottom: 3px;
-      background-color: white;
-      transition: .4s;
-      border-radius: 50%;
-    }
-
-    input:checked + .slider {
-      background-color: #2196F3;
-    }
-
-    input:checked + .slider:before {
-      transform: translateX(26px);
-    }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Moja podroz z HTML w szkole</h1>
-    <div>
-        <p>Strona zostala juz odwiedzona  <span id="counter"></span> razy.</p>
-        <script>
-            let visits = localStorage.getItem('visitCount');
-                if (!visits) {
-                visits = 0;
-            }
-
-            visits++;
-
-            localStorage.setItem('visitCount', visits);
-
-            document.getElementById('counter').textContent = visits;
-        </script>
-    </div>
-    </header>
-    <div class="Nawigacja"> <!--Pasek boczny-->
-        <div>
-            <p>Tryb<br>Ciemny/Jasny</p>
-            <label class="switch">
-                <input type="checkbox" onchange="toggleStyle()" id="themeSwitch">
-                <span class="slider"></span>
-            </label>
-            
-            <script>
-                function toggleStyle() {
-                    const themeLink = document.getElementById('theme');
-                    const checkbox = document.getElementById('themeSwitch');
-                  
-                    if (checkbox.checked) {
-                        themeLink.setAttribute('href', 'Data Pages/stylelight.css');
-                    } else {
-                        themeLink.setAttribute('href', 'Data Pages/styledark.css');
-                    }
-                }
-              </script>
+    <div class="parent">
+        <div class="div1">
+            <header>
+                <h1>Moj projekt z Web-development</h1>
+            </header>
         </div>
-        <h2>Nawigacja</h2>
-        <ul>
-          <li><a href="#Historia">Historia zadan</a></li>
-          <li><a href="#Zadanie1">Zadanie 1</a></li>
-          <li><a href="#Zadanie2">Zadanie 2</a></li>
-          <li><a href="#Zadanie3">Zadanie 3</a></li>
-          <li><a href="#Zadanie4">Zadanie 4</a></li>
-          <li><a href="#Zadanie5">Zadanie 5</a></li>
-          <li><a href="#Zadanie6">Zadanie 6</a></li>
-          <li><a href="#Zadanie7">Zadanie 7</a></li>
-          <li><a href="#Zadanie8">Zadanie 8</a></li>
-          <li><a href="#Zadanie9">Zadanie 9</a></li>
-        </ul>
-      </div>
-    <main>
-        <section id="Historia">
-            <h1>Historia zadan</h1>
-            <p>Jako ze chodze do szkoly informatycznej, to mam zajecia z Web Development. Robienie stron bardzo mi sie spodobalo wiec postanowilem sie dalej rozwijac w wlasnym zakresie.</p>
-            <p>Mialem juz 9 zadan z HTML i 1 z CSS, i wszystkie te zadania beda w tym REPO.</p>
-        </section>
-        <section id="Zadanie1">
-            <h1>Zadanie 1</h1>
-            <h3>Wstep do HTML</h2>
+        <div class="div17 rozdzial"><h1>Moje szkolne projekty</h1></div>
+        <div id="div1" data-url="https://pawfix.github.io/Zadanie%201/index.html" class="div2 karta">
+            <h2>Wstep do html</h2>
             <p>Zadanie bylo proste. Polegalo ono na zrobieniu zaproszenia na dni otwarte w mojej szkole.</p>
-            <div>
-                <object data="Zadanie 1/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 1/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie2">
-            <h1>Zadanie 2</h1>
-            <h3>Znaki specjalne</h3>
+        </div>
+        <div id="div2" data-url="https://pawfix.github.io/Zadanie%202/index.html" class="div3 karta">
+            <h2>Znaki specjalne</h2>
             <p>Tym razem zadanie polegalo na pokazaniu znakow specjalnych, metadanych itp.</p>
-            <div>
-                <object data="Zadanie 2/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 2/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie3">
-            <h1>Zadanie 3</h1>
-            <h3>Linki wewnetrzne</h3>
+        </div>
+        <div id="div3" data-url="https://pawfix.github.io/Zadanie%203/index.html" class="div4 karta">
+            <h1>Linki zewnetrzne</h1>
             <p>Te zadanie polegalo na ustawieniu nawigacji po stronie za pomoca linkow wewnetrznych i otwieraniu zdiec na pelna strone</p>
-            <div>
-                <object data="Zadanie 3/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 3/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie4">
-            <h1>Zadanie 4</h1>
-            <h3>Pliki lokalne i podstrony</h3>
+        </div>
+        <div id="div4" data-url="https://pawfix.github.io/Zadanie%204/index.html" class="div5 karta">
+            <h1>Pliki lokalne</h1>
             <p>Zadanie 4 polegalo na uzyciu linkow do otwierania podstron, nawigacji po stronie i pobierania lokalnych plikow.</p>
-            <div>
-                <object data="Zadanie 4/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 4/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie5">
-            <h1>Zadanie 5</h1>
-            <h3>Poprawne uzycie podstron i grafik</h3>
+        </div>
+        <div id="div5" data-url="https://pawfix.github.io/Zadanie%205/index.html" class="div6 karta">
+            <h1>Uzycie podstron i grafik</h1>
             <p>Zadanie 5 mialo na celu zrobienie slownika polsko-angielskiego z grafikami, tabelami, linkami i definicjami</p>
-            <div>
-                <object data="Zadanie 5/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 5/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie6">
-            <h1>Zadanie 6</h1>
-            <h3>Formularz</h3>
+        </div>
+        <div id="div6" data-url="https://pawfix.github.io/Zadanie%206/index.html" class="div7 karta">
+            <h1>Formularz</h1>
             <p>Te Zadanie polegalo na zrobieniu Quizu o twoim ulubionym artyscie, z roznymi formami wprowadzania danych</p>
-            <div>
-                <object data="Zadanie 6/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 6/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie7">
-            <h1>Zadanie 7</h1>
-            <h3>Interaktywna galeria</h3>
+        </div>
+        <div id="div7" data-url="https://pawfix.github.io/Zadanie%207/index.html" class="div8 karta" >
+            <h1>Interaktywna galeria</h1>
             <p>Zadanie te polegalo na zrobieniu interaktywnej galerii z kotami, skladajacej sie z kilku podstron pomiedzy ktorymi skaczesz za pomoca guzikow</p>
-            <div>
-                <object data="Zadanie 7/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 7/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie8">
-            <h1>Zadanie 8</h1>
-            <h3>Multimedia</h3>
+        </div>
+        <div class="div9">
+            <aside>
+                <details>
+                    <summary>Moje szkolne projekty</summary>
+                    <nav>
+                        <p><a href="#div1"><strong>Wstep do HTML</strong></a></p>
+                        <p><a href="#div2"><strong>Znaki specjalne</strong></a></p>
+                        <p><a href="#div3"><strong>Linki zewnetrzne</strong></a></p>
+                        <p><a href="#div4"><strong>Pliki lokalne</strong></a></p>
+                        <p><a href="#div5"><strong>Uzycie podstron i grafik</strong></a></p>
+                        <p><a href="#div6"><strong>Formularz</strong></a></p>
+                        <p><a href="#div7"><strong>Interaktywna galeria</strong></a></p>
+                        <p><a href="#div8"><strong>Multimedia</strong></a></p>
+                        <p><a href="#div9"><strong>Ostatni test</strong></a></p>
+
+                    </nav>
+                </details>
+                <details>
+                    <summary>
+                        Moje wlasne projekty
+                    </summary>
+                    <nav>
+                        <p><a href="#div10"><strong>div1</strong></a></p>
+                        <p><a href="#div11"><strong>div2</strong></a></p>
+                        <p><a href="#div12"><strong>div3</strong></a></p>
+                    </nav>
+                </details>
+                <details>
+                    <summary>Moje wielorazowe schematy</summary>
+                    <nav>
+
+                    </nav>
+                </details>
+            </aside>
+        </div> <!--Nawigacja-->
+        <div class="div10">
+            <footer>
+                <h2>Strona od <a href="https://github.com/pawfix" target="_blank">Pawfix</a></h2>
+                <p><a href="https://github.com/pawfix/pawfix.github.io" target="_blank">Kod zrodlowy</a></p>
+            </footer>
+        </div> <!--Footer-->
+        <div id="div8" data-url="https://pawfix.github.io/Zadanie%208%20-%20Multimedia/index.html" class="div11 karta">
+            <h1>Multimedia</h1>
             <p>Te zadanie polegalo na pokazaniu swojej umiejetnopsci uzywania multimedji typu filmy i pliki audio</p>
-            <div>
-                <object data="Zadanie 8 - Multimedia/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 8 - Multimedia/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-        <section id="Zadanie9">
-            <h1>Zadanie 9</h1>
-            <h3>Ostatni test</h3>
+        </div>
+        <div id="div9" data-url="https://pawfix.github.io/Zadanie%209%20-%20Sportowiec/index.html" class="div12 karta">
+            <h1>Ostatni test</h1>
             <p>W tym zadaniu musialem zrobic strone uzywajac wszystkich wczesniej poznanych funkcji</p>
-            <div>
-                <object data="Zadanie 9 - Sportowiec/index.html" type="text/html" style="background-color: white;">Podglad strony</object>
-                <a href="Zadanie 9 - Sportowiec/index.html" target="_blank"><button type="button">Kliknij aby przejsc do strony</button></a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>Zrobione przez <a href="https://github.com/pawfix/">pawfix</a></p>
-        <p>2025-20XX</p>
-    </footer>
-    <!-- Przycisk scroll-to-top -->
-<button id="DoGory" style="
-display:none;
-position:fixed;
-bottom:20px;
-right:20px;
-width:50px;
-height:50px;
-border:none;
-border-radius:50%;
-background:#888888;
-color:white;
-font-size:25px;
-line-height:20px;
-text-align:center;
-cursor:pointer;
-padding:0;
-">↑</button>
-
-<script>
-const DoGory = document.getElementById('DoGory');
-
-// Pokaż / ukryj przycisk przy przewijaniu
-window.onscroll = () => {
-DoGory.style.display = window.scrollY > 100 ? 'block' : 'none';
-};
-
-// Przewiń do góry po kliknięciu
-DoGory.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
-</script>
+        </div>
+        <div class="div16 rozdzial"><h1>Moje wlasne projekty</h1></div>
+        <div id="div10" class="div13 rozdzial"><h1>Moje wielorazowe schematy</h1></div>
+        <div id="div11" data-url="Pages1/index.html" class="div14 karta">
+            <h1>Pierwsze Github Pages</h1>
+            <p>To jest pierwsza wersja Github Pages ktura zrobilem</p>
+        </div>
+        <div id="div12" class="div15 karta"> 15</div>
+        <div class="div18 karta">18</div>
+        </div> 
+        <script>
+            document.querySelectorAll('.karta').forEach(function(box) {
+            box.addEventListener('click', function() {
+            window.location.href = box.dataset.url;
+            });
+        });
+        </script>
 </body>
 </html>

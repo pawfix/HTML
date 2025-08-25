@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karta graficzna - Graphics card</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    
+
+    
+    header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1em;
+        border-radius: 5px;
+    }
+    .component-info {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    .back-link {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .back-link:hover {
+        background-color: #45a049;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        background-color: white;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #e6e6e6;
+    }
+    .component-info ul {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 20px 20px 20px 40px;
+        margin: 20px 0;
+    }
+</style>
+<body>
+    <div>
+        <header style="text-align: center; background-color: green;; padding: 25px; border-radius: 25px; ">
+            <h1>Karta graficzna - Graphics card</h1>
+        </header>
+    </div>
+    <div  class="component-info" style="2px solid black; border-radius: 10px; padding: 20px 20px 20px 40px; margin: 20px 0;"">
+        <p style="text-align: center;"><a href="#tabela">Tabela</a>|=|<a href="#Fakty">Ciekawostki</a>|=|<a href="#Slownik">Słownik</a></p>
+    </div>
+    <div class="component-info">
+        <p>A printed circuit board that controls the output to a display screen.</p>
+        <p>płytka drukowana sterująca sygnałem wyjściowym na ekranie wyświetlacza.</p>
+        <a href="Media/karta graficzna.png" target="_blank"><img src="Media/karta graficzna.png" alt="Karta graficzna Radeon 5600 XT" width=250px></a>
+        <div>
+            <table id="tabela">
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Producent</th>
+                    <th>VRAM</th>
+                    <th>Taktowanie</th>
+                    <th>Pobór mocy</th>
+               </tr>
+               <tr>
+                    <td>Radeon RX 5600 XT</td>
+                    <td>AMD</td>
+                    <td>8GB GDDR6</td>
+                    <td>1500 MHz</td>
+                    <td>150W</td>
+               </tr>
+               <tr>
+                <th colspan="5" style="text-align: center;">Konkuręcja</th>
+               </tr>
+               <tr>
+                    <td>Radeon RX 5700 XT</td>
+                    <td>AMD</td>
+                    <td>8GB GDDR6</td>
+                    <td>1750 MHz</td>
+                    <td>225W</td>
+               </tr>
+               <tr>
+                <td>Radeon RX 5800 XT</td>
+                    <td>AMD</td>
+                    <td>8GB GDDR6</td>
+                    <td>1850 MHz</td>
+                    <td>250W</td>
+               </tr>
+            </table>
+        </div>
+        <div id="Fakty">
+            <div class="component-info">
+                <h2>Interesting Facts About Graphics Cards</h2>
+                <ul>
+                    <li>The first dedicated graphics card was introduced by IBM in 1981.</li>
+                    <li>Modern graphics cards can perform trillions of operations per second.</li>
+                    <li>GPUs are used not just for gaming, but also for cryptocurrency mining and scientific computations.</li>
+                    <li>Some graphics cards have more transistors than the main CPU of a computer.</li>
+                    <li>The VRAM in graphics cards is much faster than standard RAM.</li>
+                    <li>Latest graphics cards support real-time ray tracing technology.</li>
+                    <li>GPUs often have their own cooling systems, including fans and heat pipes.</li>
+                </ul>
+            
+                <h2>Ciekawostki o Kartach Graficznych</h2>
+                <ul>
+                    <li>Pierwsza dedykowana karta graficzna została wprowadzona przez IBM w 1981 roku.</li>
+                    <li>Nowoczesne karty graficzne mogą wykonywać biliony operacji na sekundę.</li>
+                    <li>GPU są używane nie tylko do gier, ale także do wydobywania kryptowalut i obliczeń naukowych.</li>
+                    <li>Niektóre karty graficzne mają więcej tranzystorów niż główny procesor komputera.</li>
+                    <li>Pamięć VRAM w kartach graficznych jest znacznie szybsza niż standardowa pamięć RAM.</li>
+                    <li>Najnowsze karty graficzne obsługują technologię śledzenia promieni w czasie rzeczywistym.</li>
+                    <li>GPU często mają własne systemy chłodzenia, w tym wentylatory i rurki cieplne.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <p id="Slownik">More info: <a href="https://dictionary.cambridge.org/dictionary/english/graphics-card" target="_blank">Strona cambridge</a></p>
+        <p><a href="index.html#Slowo1">Wróć</a></p>
+    </div>
+</body>
+</html>
