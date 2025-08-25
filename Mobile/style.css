@@ -1,0 +1,85 @@
+* {
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+ {
+    background-color: rgb(30, 30, 30);
+}
+.div1 { grid-area: 1 / 1 / 1 / 1; }
+.div2 { grid-area: 3 / 1 / 3 / 1; }
+.div3 { grid-area: 4 / 1 / 4 / 1; }
+.div4 { grid-area: 5 / 1 / 5 / 1; }
+.div5 { grid-area: 6 / 1 / 6 / 1; }
+.div6 { grid-area: 7 / 1 / 7 / 1; }
+.div7 { grid-area: 8 / 1 / 8 / 1; }
+.div8 { grid-area: 9 / 1 / 9 / 1; }
+.div9 { grid-area: 14 / 1 / 12 / 1; }
+.div10 { grid-area: 17 / 1 / 17 / 1; }
+.div11 { grid-area: 10 / 1 / 10 / 1; }
+.div12 { grid-area: 11 / 1 / 11 / ; }
+.div13 { grid-area: 16 / 1 / 16 / 1; }
+.div14 { grid-area: 13 / 1 / 13 / 1; }
+.div15 { grid-area: 14 / 1 / 14 / 1; }
+.div16 { grid-area: 12 / 1 / 12 / 1; }
+.div17 { grid-area: 2 / 1 / 2 / 1; } 
+.div18 { grid-area: 15 / 1 / 15 / 1;}
+    
+header {
+    background-color: rgb(25, 25, 25);
+    align-content: center;
+    text-align: center;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+footer {
+    background-color: rgb(25, 25, 25);
+    align-content: center;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+aside {
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    text-indent: 5px;
+    border-radius: 25px;
+    width: 80%;
+    margin-left: 10%;
+}
+details {
+    margin: 15px;
+}
+details a {
+    text-decoration: none;
+}
+.rozdzial {
+    background-color: rgb(35, 35, 35);
+    border-radius: 25px;
+}
+.karta {
+    background-color: rgb(30, 30, 30);
+    border-radius: 15px;
+    border: 5px solid black;
+    cursor: pointer;
+}
+.karta:hover {
+    scale: 1.025;
+    background-color: rgb(45, 45, 45);
+}
+.karta p {
+    margin: 5px;
+}

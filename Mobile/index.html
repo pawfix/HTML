@@ -5,110 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #device-popup {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(255, 255, 255, 0.6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-        }
-    
-        #popup-box {
-            background: rgb(30, 30, 30);
-            padding: 20px 30px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 0 20px rgba(255,255,255,0.3);
-            font-family: Arial, sans-serif;
-        }
-        #popup-box h2 {
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-        .popup-btn {
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-        .popup-btn.pc {
-            background: #4CAF50;
-            color: white;
-        }
-        .popup-btn.phone {
-            background: #2196F3;
-            color: white;
-        }
-        .popup-btn:hover {
-            opacity: 0.85;
-        }
-    </style>        
 </head>
 <body>
-
-
-
-    <div id="device-popup">
-        <div id="popup-box">
-            <h2>Jesteś na PC czy na telefonie?</h2>
-            <button class="popup-btn pc" onclick="chooseDevice('PC')">PC</button>
-            <button class="popup-btn phone" onclick="chooseDevice('Mobile')">Telefon</button>
-        </div>
-    </div>
-    <script>
-        // Funkcja do ustawiania cookie
-        function setCookie(name, value, days) {
-            let date = new Date();
-            date.setTime(date.getTime() + (days*24*60*60*1000));
-            document.cookie = name + "=" + value + ";expires=" + date.toUTCString() + ";path=/";
-        }
-    
-        // Funkcja do czytania cookie
-        function getCookie(name) {
-            let decodedCookie = decodeURIComponent(document.cookie);
-            let ca = decodedCookie.split(';');
-            name = name + "=";
-            for(let i=0; i<ca.length; i++) {
-                let c = ca[i].trim();
-                if (c.indexOf(name) === 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
-    
-        // Funkcja wywoływana po wyborze
-        function chooseDevice(device) {
-            setCookie("deviceChoice", device, 7); // zapis na 7 dni
-            if (device === "Mobile") {
-                window.location.href = "/Mobile/index.html";
-            } else {
-                document.getElementById("device-popup").style.display = "none";
-            }
-        }
-    
-        // Sprawdzenie cookie przy starcie
-        window.onload = function() {
-            let choice = getCookie("deviceChoice");
-            if (choice === "PC") {
-                document.getElementById("device-popup").style.display = "none";
-            } else if (choice === "Mobile") {
-                window.location.href = "/Mobile/index.html";
-            } else {
-                document.getElementById("device-popup").style.display = "flex";
-            }
-        }
-    </script>
-
-
-
     <div class="parent">
         <div class="div1">
             <header>
@@ -144,7 +42,25 @@
             <h1>Interaktywna galeria</h1>
             <p>Zadanie te polegalo na zrobieniu interaktywnej galerii z kotami, skladajacej sie z kilku podstron pomiedzy ktorymi skaczesz za pomoca guzikow</p>
         </div>
-        <div class="div9">
+        <div id="div8" data-url="https://pawfix.github.io/Zadanie%208%20-%20Multimedia/index.html" class="div11 karta">
+            <h1>Multimedia</h1>
+            <p>Te zadanie polegalo na pokazaniu swojej umiejetnopsci uzywania multimedji typu filmy i pliki audio</p>
+        </div>
+        <div id="div9" data-url="https://pawfix.github.io/Zadanie%209%20-%20Sportowiec/index.html" class="div12 karta">
+            <h1>Ostatni test</h1>
+            <p>W tym zadaniu musialem zrobic strone uzywajac wszystkich wczesniej poznanych funkcji</p>
+        </div>
+        <div class="div16 rozdzial"><h1>Moje wlasne projekty</h1></div>
+        <div id="div11" data-url="https://pawfix.github.io/Pages1/index.html" class="div14 karta">
+            <h1>Pierwsze Github Pages</h1>
+            <p>To jest pierwsza wersja Github Pages ktura zrobilem</p>
+        </div>
+        <div id="div12" class="div15 karta"><h1>Wolne Miejsce</h1></div>
+        <div class="div18 karta">
+            <h1>Wolne Miejsce</h1>
+        </div>
+        <div id="div10" class="div13 rozdzial"><h1>Moje wielorazowe schematy</h1></div>
+        <!--<div class="div9">
             <aside>
                 <details>
                     <summary>Moje szkolne projekty</summary>
@@ -177,32 +93,14 @@
 
                     </nav>
                 </details>
-                <h2><a href="/Mobile/index.html" style="text-decoration: none; border: 5px dotted black; border-radius: 15px;"><strong>Wersja na telefon</strong></a></h2>
-            </aside>
+            </aside>-->
         </div> <!--Nawigacja-->
         <div class="div10">
             <footer>
                 <h2>Strona od <a href="https://github.com/pawfix" target="_blank">Pawfix</a></h2>
                 <p><a href="https://github.com/pawfix/pawfix.github.io" target="_blank">Kod zrodlowy</a></p>
             </footer>
-        </div> <!--Footer-->
-        <div id="div8" data-url="https://pawfix.github.io/Zadanie%208%20-%20Multimedia/index.html" class="div11 karta">
-            <h1>Multimedia</h1>
-            <p>Te zadanie polegalo na pokazaniu swojej umiejetnopsci uzywania multimedji typu filmy i pliki audio</p>
-        </div>
-        <div id="div9" data-url="https://pawfix.github.io/Zadanie%209%20-%20Sportowiec/index.html" class="div12 karta">
-            <h1>Ostatni test</h1>
-            <p>W tym zadaniu musialem zrobic strone uzywajac wszystkich wczesniej poznanych funkcji</p>
-        </div>
-        <div class="div16 rozdzial"><h1>Moje wlasne projekty</h1></div>
-        <div id="div10" class="div13 rozdzial"><h1>Moje wielorazowe schematy</h1></div>
-        <div id="div11" data-url="Pages1/index.html" class="div14 karta">
-            <h1>Pierwsze Github Pages</h1>
-            <p>To jest pierwsza wersja Github Pages ktura zrobilem</p>
-        </div>
-        <div id="div12" class="div15 karta"> 15</div>
-        <div class="div18 karta">18</div>
-        </div> 
+        </div> <!--Footer--> 
         <script>
             document.querySelectorAll('.karta').forEach(function(box) {
             box.addEventListener('click', function() {
