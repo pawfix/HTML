@@ -1,0 +1,32 @@
+#Uniwersalne style ciemne
+
+#Cale
+* {
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+}
+
+
+
+
+
+footer {
+    background-color: rgb(25, 25, 25);
+    align-content: center;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+header {
+    background-color: rgb(25, 25, 25);
+    align-content: center;
+    text-align: center;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}

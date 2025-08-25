@@ -1,0 +1,28 @@
+#Uniwersanle style jasne
+
+#Cale
+* {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+#.Header i footer
+
+header {
+    background-color: rgb(225, 225, 225);
+    align-content: center;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+footer {
+    background-color: rgb(225, 225, 225);
+    align-content: center;
+    text-align: center;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
